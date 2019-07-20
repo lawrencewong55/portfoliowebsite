@@ -1,0 +1,100 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+@font-face {
+    src: url(./actionman/Action_Man.ttf);
+    font-family: nos;
+}
+
+/* Box Model Hack */
+* {
+   box-sizing: border-box;
+ }
+ 
+ 
+ 
+ /******************************************
+ /* BASE STYLES
+ /*******************************************/
+
+ html { 
+     height:100%;
+     min-height:100%;
+ }
+
+ body {
+     color: #000;
+     line-height: 1.5;
+     font-family: nos;
+     background: url(/image/edit1.jpg);
+     background-size: cover;
+   }
+
+ /******************************************
+ /* LAYOUT
+ /*******************************************/
+ /* Center the container */
+ .container {
+     padding: 20px 40px 20px 40px;
+     max-width: 90%;
+     margin: 0 auto;
+     
+ }
+
+ /* header styles */
+ /*               */
+
+ header{
+     background-color:rgba(0, 0, 0, 0.753);
+     margin: 0 0 50px;
+ }
+
+ header .container {
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+
+header .container a {
+   background:none;
+   color:#eadf46;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 15px;
+    text-decoration: none;
+    
+    
+}  
+
+header a:hover {
+   background-color:#0c608d;
+   border-radius: 20px;
+}
+
+header .container ul {
+   display: flex;
+}    
+
+/* comic border */
+
+.imgborder {
+   border: solid 2px black;
+   border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+   border-width: 3px 4px 3px 5px;
+   transform: rotate(2deg);
+}
+
+.pborder{
+   border: solid 2px black;
+   border-width: 3px 3px 5px 5px;
+   border-radius: 0% 95% 2% 95%/94% 5% 92% 5%;
+   background-color: white;
+   padding:20px;
+   margin: 20px;
+}
+
+
